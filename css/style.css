@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* Mini reset css
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url("../img/bg/2.jpg");
+}
+
+h1,
+h2,
+h3 {
+    margin: 20px 10px;
+}
+
+.container {
+    width: 99%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    background: rgb(0, 0, 0, 0.5);
+    margin-bottom: 180px;
+}
+
+
+/* estilizando topo do site */
+
+.header {
+    background-color: #0d0e0f;
+    display: flex;
+    /* distancia entre os elementos */
+    justify-content: space-between;
+    padding: 20px;
+    /* alinhar os elementos ao centro*/
+    align-items: center;
+    /* permite a quebra de linha dos elementos em ato de responsividade */
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #abc35a;
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+}
+
+
+/* SUB-MENU CATEGORIA */
+
+.menu li ul {
+    /* defini a posição do menu como absoluta para ele permanecer no local */
+    position: absolute;
+    display: none;
+    list-style: none;
+    background: rgb(0, 0, 0, 0.7);
+    margin-top: 5px;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+
+/* modificar elementos dentro do menu de categorias */
+
+.sub-menu li:hover {
+    background: #124204;
+    border-radius: 4px;
+}
+
+
+/* Logo do site */
+
+.header img {
+    width: 50px;
+}
+
+.header #logo {
+    font-size: 50px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+
+/* permiti espaçamento entre os itens */
+
+.menu li {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/* FILMES EM DESTAQUE */
+
+.new-movies img {
+    max-width: 100%;
+    display: block;
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.new-movies {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.box-new-movie {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* FILMES RECOMENDADOS (CATEGORIAS) */
+
+.suggested-movies img {
+    /* ocupar 100% do pai */
+    max-width: 100%;
+    display: block;
+    width: 420px;
+    height: 250px;
+    border-radius: 3px;
+}
+
+.suggested-movies {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* para ter a base de 200px, caso não, quebrar a linha */
+
+.box-suggested-movie {
+    flex: 1 1 200px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* Titulos das categorias */
+
+.content p {
+    margin-left: 20px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.title-category {
+    width: 95%;
+    font-size: 20px;
+    color: antiquewhite;
+    font-weight: bold;
+    background: rgb(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+/* EFEITOS AO PASSAR O MOUSE NAS IMAGENS*/
+
+.transition-effect {
+    /* transição aplicada a todos elementos(all) com duração de 0.5s */
+    transition: all 0.5s;
+    /* define o tipo de cursor para ir pairando sobre links */
+    cursor: pointer;
+}
+
+.transition-effect:hover {
+    /* define uma lista de definições de transformação que são aplicadas a um elemento e aos filhos do elemento */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* RODAPÉ */
+
+.footer {
+    width: 70%;
+    margin: auto;
+    background: rgb(0, 0, 0, 0.9);
+    color: rgba(250, 235, 215, 0.555);
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer span {
+    text-align: justify;
+}
+
+.footer p {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.footer img {
+    width: 40px;
+    margin: 5px;
+}
