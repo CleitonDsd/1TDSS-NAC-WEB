@@ -115,17 +115,19 @@ h3 {
 }
 
 .new-movies {
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .box-new-movie {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: auto;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -166,13 +168,25 @@ h3 {
 }
 
 .title-category {
-    width: 95%;
+    width: 1200px;
+    margin: auto;
     font-size: 20px;
     color: antiquewhite;
     font-weight: bold;
     background: rgb(0, 0, 0, 0.5);
     padding: 5px;
     border-radius: 10px;
+}
+
+#ver-mais {
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 10px;
+    color: rgb(116, 110, 103);
+}
+
+#ver-mais:hover {
+    color: chartreuse;
 }
 
 

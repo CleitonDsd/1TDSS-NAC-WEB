@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    background: url(../img/bg/movies.jpg);
+}
+
+.container {
+    width: 60%;
+    min-width: 800px;
+    height: auto;
+    margin: 50px auto;
+    border: 1px groove green;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.conteudo-formulario {
+    margin-top: 50px;
+}
+
+.conteudo-formulario h1 {
+    font-size: 65px;
+    color: #adff2f;
+    text-align: center;
+}
+
+.conteudo-formulario img {
+    width: 60px;
+    height: 60px;
+}
+
+
+/*alinhar img do formulário*/
+
+.conteudo-formulario p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.formulario {
+    max-width: 40%;
+    margin: 10px auto;
+    display: flex;
+    /*centralizar os itens*/
+    justify-content: center;
+    /*alinhar os campos um abaixo do outro*/
+    flex-direction: column;
+    padding: 25px;
+    background: #000;
+}
+
+.formulario input[type="text"],
+input[type="password"],
+input[type="email"] {
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.item {
+    flex: 1;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.formulario button {
+    font-family: tahoma;
+    font-weight: bold;
+    background: #adff2f;
+    width: 150px;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* TEXTOS DE MERCHAN DO SITE */
+
+.merchandisign {
+    color: antiquewhite;
+    margin-top: 30px;
+}
+
+.merchandisign h1,
+h2 {
+    margin-top: 10px;
+    color: #adff2f;
+    text-align: center;
+}
+
+.merchandisign p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#propaganda {
+    margin: 25px auto;
+    width: 55%;
+    color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.formulario p {
+    color: antiquewhite;
+}
+
+
+/* EFEITOS AO PASSAR O MOUSE NAS IMAGENS*/
+
+.transition-effect {
+    /* transição aplicada a todos elementos(all) com duração de 0.5s */
+    transition: all 0.5s;
+    /* define o tipo de cursor para ir pairando sobre links */
+    cursor: pointer;
+}
+
+.transition-effect:hover {
+    /* define uma lista de definições de transformação que são aplicadas a um elemento e aos filhos do elemento */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* PARTE INFERIOR DO SITE | SOBRE NÓS */
+
+.about {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.about h1 {
+    color: #adff2f;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about p {
+    margin: 25px auto;
+    width: 60%;
+    color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}

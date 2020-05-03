@@ -1,259 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Lime Movie</title>
+    <title>Cadastro</title>
 
+    <link rel="stylesheet" href="./css/form.css">
 </head>
 
 <body>
-    <header class="header">
-        <a id="logo" href="" class="transition-effect">Lime Movie</a>
-        <img class="transition-effect" src="./img/bg/logo.ico">
-
-        <nav>
-            <ul class="menu ">
-                <li class="transition-effect"><a href="">Categorias</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="">Infantil</a>
-                        </li>
-                        <li>
-                            <a href="">Romance</a>
-                        </li>
-                        <li>
-                            <a href="">Comédia</a>
-                        </li>
-                        <li>
-                            <a href="">Terror</a>
-                        </li>
-                        <li>
-                            <a href="">Ação</a>
-                        </li>
-                        <li>
-                            <a href="">Documentário</a>
-                        </li>
-                        <li>
-                            <a href="">Suspense</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="transition-effect"><a href="">Sobre</a></li>
-                <li class="transition-effect"><a href="">Contato</a></li>
-                <li class="transition-effect"><a href="">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- controla a margem da página principal -->
+    <!-- div para receber todo conteúdo -->
     <div class="container">
-        <!-- conteudo central e principal da página  -->
-        <div class="content">
-            <!-- exibe os filmes mais recentes -->
-            <p class="title-category">Destaques da Semana</p>
-            <div class="new-movies ">
-                <div class="box-new-movie transition-effect">
-                    <a href=""><img src="./img/new/1.jpg"></a>
-                </div>
-                <div class="box-new-movie transition-effect">
-                    <a href=""><img src="./img/new/2.jpg"></a>
-                </div>
-                <div class="box-new-movie transition-effect">
-                    <a href=""><img src="./img/new/4.jpg"></a>
-                </div>
-                <div class="box-new-movie transition-effect">
-                    <a href=""><img src="./img/new/3.jpg"></a>
-                </div>
 
+        <div class="conteudo-formulario">
+            <h1 class="transition-effect">Lime Movie</h1>
+            <p><img class="transition-effect" src="./img/bg/logo.ico" alt=""></p>
+
+            <!-- Propaganda para assinantes -->
+            <div class="merchandisign">
+                <h2>Melhores Filmes e Séries! </h2>
+                <p>
+                    Aproveite o melhor do entretenimento na sua casa com a Lime Movie.
+                </p>
+                <h2>Assine Gratuitamente durante a quarentena!</h2>
+                <p id="propaganda">Pensando em você disponibilizamos todo o conteúdo do site gratuitamente para você permanecer em casa garantindo entretenimento até vencermos a batalha contra o COVID-19. #stayathome com a Lime Movie.</p>
             </div>
-            <!-- exibe outros filmes em alta separados por categoria  -->
+            <form class="formulario" action="./html/home.html" method="get">
 
-            <p class="title-category">Infantil</p>
-            <div class="suggested-movies">
-                <!-- filmes infantis -->
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/kid/1.jpg"></a>
+                <div class="item">
+                    <input type="text" name="name" id="nome" placeholder="Seu nome **" autofocus required="">
                 </div>
 
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/kid/2.jpg"></a>
+                <div class="item">
+                    <input type="text" name="login" id="login" placeholder="Nome de usuário" maxlength="20">
                 </div>
 
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/kid/3.jpg"></a>
+                <div class="item">
+                    <input type="email" id="email" placeholder="Seu email" class="email">
                 </div>
 
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/kid/4.jpg"></a>
+                <div class="item">
+                    <input type="password" name="senha" id="Senha" placeholder="Senha" maxlength="20">
                 </div>
 
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/kid/5.jpg"></a>
+                <div class="item">
+                    <button class="transition-effect" type="submit" id="entrar">Assinar!</button>
                 </div>
-            </div>
+                <p class="stay-home">#FiqueEmCasaLimeMovie</p>
 
-            <p class="title-category">Romance</p>
-            <div class="suggested-movies">
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/romance/1.jpg"></a>
-                </div>
+            </form>
+        </div>
+        <!-- sobre a live-movie -->
+        <div class="about">
 
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/romance/2.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/romance/3.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/romance/4.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/romance/5.jpg"></a>
-                </div>
-            </div>
-
-            <p class="title-category">Comédia</p>
-            <div class="suggested-movies">
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/comedy/1.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/comedy/2.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/comedy/3.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/comedy/4.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/comedy/5.jpg"></a>
-                </div>
-            </div>
-
-            <p class="title-category">Terror</p>
-            <div class="suggested-movies">
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/horror/1.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/horror/2.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/horror/3.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/horror/4.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/horror/5.jpg"></a>
-                </div>
-            </div>
-
-            <p class="title-category">Ação</p>
-            <div class="suggested-movies">
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/action/1.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/action/2.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/action/3.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/action/4.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/action/5.jpg"></a>
-                </div>
-            </div>
-
-            <p class="title-category">Documentário</p>
-            <div class="suggested-movies">
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/documentary/1.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/documentary/2.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/documentary/3.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/documentary/4.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/documentary/5.jpg"></a>
-                </div>
-            </div>
-
-            <p class="title-category">Suspense</p>
-            <div class="suggested-movies">
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/thriller/1.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/thriller/2.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/thriller/3.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/thriller/4.jpg"></a>
-                </div>
-
-                <div class="box-suggested-movie transition-effect">
-                    <a href=""><img src="./img/thriller/5.jpg"></a>
-                </div>
-
-            </div>
+            <h1>Conheça-nos</h1>
+            <p>
+                A Lime Movie atende aos assinantes em vários países. A entidade BrainTech Development que fornece o acesso ao serviço Lime Movie e se qualifica como sua controladora de dados depende do país de assinatura e será exibida no email de confirmação de assinatura
+                ou pagamento.
+            </p>
+            <p>
+                Lime Movie, v. Lins de Vasconcelos, 1264 - Aclimação, São Paulo - SP.
+            </p>
+            <p>Fale Conosco SAC: (11) 3385-8010 </p>
         </div>
     </div>
-    <!-- rodapé da página -->
-    <footer class="footer">
-        <span>Copyright ©2020 www.fiap.com.br, TODOS OS DIREITOS RESERVADOS. Todo o conteúdo do site é de propriedade exclusiva da Lime Movie. É vedada qualquer reprodução, total ou parcial, de qualquer elemento sem expressa autorização. A violação de qualquer direito mencionado implicará na responsabilização cível e criminal nos termos da Lei. Lime Movie | São Paulo, SP - 01538-001 - (11) 3385-8010.</span>
-        <nav>
-            <p>Powered by BrainTech Development</p>
-            <ul>
-                <li class="transition-effect">
-                    <a href="https://www.fiap.com.br/" target="_blank"><img src="./img/social-medias/browser.png"></a>
-                </li>
-                <li class="transition-effect">
-                    <a href="https://github.com/braintechdev" target="_blank"><img src="./img/social-medias/github.png"></a>
-                </li>
-                <li class="transition-effect">
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="./img/social-medias/linkedin.png"></a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
 
 </body>
 
