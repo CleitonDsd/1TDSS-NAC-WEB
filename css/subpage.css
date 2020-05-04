@@ -34,63 +34,77 @@ body {
 /*   Sessão Sobre o Filme  */
 
 .background {
-    position: relative;
     height: 70vh;
+    background-color: rgba( 0, 0, 0, 0.5);
 }
 
-.filme-background {
+.filme-container {
+    position: relative;
+    margin: 0 6%;
+    height: 100%;
+}
+
+.trailer-dark-background {
     /* background-image: url("https://occ-0-1314-1740.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABY-WyLbtMCDl8w5Q_Uifquu7AgY3wsMYmRX3UKYO0PoKk8aMUTYbWz46VL185XwTe8nP4qJraNE-_cGBkccCHM3XYdzg.webp?r=dc8"); */
-    background-image: url("../img/horror/2.jpg");
-    background-size: cover;
+    /* background-image: url("../img/horror/2.jpg");
+    background-size: cover; */
+    background-color: #000;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     /* new */
-    box-shadow: inset 0 0 20px 20px #000;
 }
 
-.image-background {
+.trailer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.trailer iframe {
+    width: 100%;
+    height: 80%;
+    z-index: 100;
+    margin-top: 3%;
+    margin-bottom: 17%;
+}
+
+.trailer-background-box-shadow {
     position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
     /* width: 70%; */
     /* new */
-    width: 50%;
-    margin: 0 6% 24px 0;
+    width: 60%;
+    /* margin: 0 6% 24px 0; */
     box-shadow: 0 0 20px 20px #000;
 }
 
 .dark-space {
     position: absolute;
-    width: 50%;
+    width: 40%;
     top: 0;
     bottom: 0;
-    background-image: linear-gradient(to right, rgba( 0, 0, 0, 0.5), #000, #000);
+    background-image: linear-gradient(to right, transparent, #000, #000);
+    /* background-image: linear-gradient(to right, rgba( 0, 0, 0, 0.5), #000, #000); */
     /* background-color: #000; */
-}
-
-.dark-space::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 100%;
-    width: 275px;
-    background-image: linear-gradient(to right, #000, transparent);
 }
 
 .conteudo-textual {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    /* right: 0; */
     bottom: 0;
     /* padding: 24px 0 24px 4%; */
     /* new */
-    padding: 24px 0 24px 8%;
+    /* padding: 24px 0 24px 8%; */
+    margin: 24px 0;
 }
 
 .filme-titulo {
@@ -111,6 +125,10 @@ body {
 
 .filme-sobre {
     color: #999;
+}
+
+#categoria-filme {
+    color: antiquewhite;
 }
 
 .info-extra {
@@ -154,25 +172,36 @@ body {
     margin-right: 5px;
 }
 
-.botao-assistir {
+.botao-lista {
     margin: 40px 0 0 0;
-    width: 30vw;
+    width: 40vw;
+    display: flex;
 }
 
-.botao-assistir button {
+.botao-item {
+    margin-right: 40px;
+}
+
+.botao-item button {
     border-radius: 4px;
     padding: 12px 32px;
     border: 0;
 }
 
-.botao-assistir .fundo {
+.botao-item .fundo {
     background-color: #fff;
     color: #141414;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
+    transition: background-color 0.5s, transform 0.5s;
 }
 
-.botao-assistir i {
+.botao-item .fundo:hover {
+    background-color: #ccc;
+    transform: scale(1.1);
+}
+
+.botao-item i {
     margin-right: 8px;
     font-size: 20px;
 }

@@ -45,88 +45,102 @@
 
     <!-- Inicio background -->
     <div class="background">
-        <!-- Imagem do filme ao fundo -->
-        <div class="image-background">
-            <div class="filme-background">
-            </div>
-        </div>
-        <!-- Background escuro a esquerda da imagem -->
-        <div class="dark-space">
-        </div>
-        <!-- Inicio Informações do filme -->
-        <div class="conteudo-textual">
 
-            <!-- Inicio Titulo -->
-            <div class="filme-titulo">
-                <a href="#">
-                    <span>Jogos Mortais</span>
-                </a>
+        <div class="filme-container">
+            <!-- Trailer do filme -->
+            <div class="trailer-background-box-shadow">
+                <div class="trailer-dark-background">
+                    <div class="trailer">
+                        <span><i class="fas fa-movie"></i></span>
+                        <iframe src="https://www.youtube.com/embed/wwnO9M0zzJo" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
-            <!-- Fim Titulo -->
+            <!-- Background escuro a esquerda do trailer -->
+            <div class="dark-space">
+            </div>
+            <!-- Inicio conteudo textual do Filme -->
+            <div class="conteudo-textual">
 
-            <!-- Inicio Informações do Filme -->
-            <div class="filme-sobre">
-                <!-- Ano - Classificação Indicativa e Duração -->
-                <div class="info-extra">
-                    <span>2017</span>
-                    <span class="class-indicativa">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/DJCTQ_-_L.svg" alt="">
-                    </span>
-                    <span>1h 29min</span>
-                </div>
-                <!-- Sinopse abaixo -->
-                <div class="sinopse">
-                    <p>
-                        Após uma série de assassinatos, todas as pistas levam a John Kramer, assassino mais conhecido como Jigsaw. À medida que a investigação avança, os policiais percebem que estão perseguindo o fantasma de um homem morto há mais de uma década.
-                    </p>
-                </div>
-                <!-- Elenco - Gênero - Direção -->
-                <div class="atores-genero">
-                    <p class="lista">
-                        <span class="rotulo">Estrelando:</span>
-                        <span>Michael Spierig, Peter Spierig</span>
-                    </p>
-                    <p class="lista">
-                        <span class="rotulo">Gênero:</span>
-                        <span>Drama, Terror, Suspense</span>
-                    </p>
-                    <p class="lista">
-                        <span class="rotulo">Direção:</span>
-                        <span>Peter Spierig</span>
-                    </p>
-                </div>
-                <!-- Botão Assistir -->
-                <div class="botao-assistir">
-                    <button class="fundo" type="button">
-                        <span><i class="fas fa-play"></i></span>
-                        <a href="https://www.youtube.com/watch?v=hsZC73vbhPU">
-                            <span>ASSISTIR</span>
-                        </a>
-                    </button>
-                </div>
-            </div>
-            <!-- Botão Home -->
-            <div class="botao-assistir">
-                <button class="fundo" type="button">
-                    <span><i class="fas fa-home"></i></span>
-                    <a href="../home.html">
-                        <span>HOME</span>
+                <!-- Inicio Titulo -->
+                <div class="filme-titulo">
+                    <a href="#">
+                        <span>Jogos Mortais</span>
                     </a>
-                </button>
-            </div>
-            <!-- Frame para o trailler do filme -->
-            <div class="botao-assistir trailler">
-                <span><i class="fas fa-movie"></i></span>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wwnO9M0zzJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <!-- Fim Informações do Filme -->
+                </div>
+                <!-- Fim Titulo -->
 
-    </div>
-    <!-- Inicio Informações do filme -->
+                <!-- Inicio Informações do Filme -->
+                <div class="filme-sobre">
+                    <!-- Ano - Classificação Indicativa e Duração -->
+                    <div class="info-extra">
+                        <span>2017</span>
+                        <span class="class-indicativa">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/DJCTQ_-_L.svg" alt="">
+                        </span>
+                        <span>1h 29min</span>
+                    </div>
+                    <!-- Sinopse abaixo -->
+                    <div class="sinopse">
+                        <p>
+                            Após uma série de assassinatos, todas as pistas levam a John Kramer, assassino mais
+                            conhecido
+                            como Jigsaw. À medida que a investigação avança, os policiais percebem que estão perseguindo
+                            o
+                            fantasma de um homem morto há mais de uma década.
+                        </p>
+                    </div>
+                    <!-- Elenco - Gênero - Direção -->
+                    <div class="atores-genero">
+                        <p class="lista">
+                            <span class="rotulo">Estrelando:</span>
+                            <span>Michael Spierig, Peter Spierig</span>
+                        </p>
+                        <p class="lista">
+                            <span class="rotulo">Gênero:</span>
+                            <span>Drama, Terror, Suspense</span>
+                        </p>
+                        <p class="lista">
+                            <span class="rotulo">Direção:</span>
+                            <span>Peter Spierig</span>
+                        </p>
+                    </div>
+                    <!-- Inicio Botões -->
+                    <div class="botao-lista">
+                        <!-- Botão Assistir -->
+                        <div class="botao-item">
+                            <a href="https://www.youtube.com/watch?v=hsZC73vbhPU">
+                                <button class="fundo" type="button">
+                                    <span><i class="fas fa-play"></i></span>
+                                    <span>ASSISTIR</span>
+                                </button>
+                            </a>
+                        </div>
+                        <!-- Botão Home -->
+                        <div class="botao-item">
+                            <a href="../home.html">
+                                <button class="fundo" type="button">
+                                    <span><i class="fas fa-home"></i></span>
+                                    <span>HOME</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Fim Botões -->
+                </div>
+                <!-- Fim Informações do Filme -->
+
+            </div>
+            <!-- Fim conteudo textual do Filme -->
+        </div>
 
     </div>
     <!-- Fim background -->
+
+    </div>
+
 </body>
 
 </html>
