@@ -108,7 +108,7 @@ body {
 }
 
 .filme-titulo {
-    margin: 40px 0 20px 0;
+    margin: 20px 0 10px 0;
 }
 
 .filme-titulo a {
@@ -118,7 +118,7 @@ body {
 }
 
 .filme-titulo span {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 100px;
 }
@@ -206,7 +206,7 @@ body {
     font-size: 20px;
 }
 
-.botao-assistir a {
+/* .botao-assistir a {
     text-decoration: none;
     color: black;
 }
@@ -222,7 +222,7 @@ span:hover {
     height: 500px;
     border-radius: 5px;
     margin-bottom: 30px;
-}
+} */
 
 
 /* links úteis 
