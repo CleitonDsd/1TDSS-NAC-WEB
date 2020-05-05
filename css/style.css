@@ -240,3 +240,71 @@ h3 {
     width: 40px;
     margin: 5px;
 }
+
+/* usado no sobre.html e contato.html */
+.container-sobre{
+    background-color: rgba( 0, 0, 0, 0.7);
+    margin: 20px 40px;
+    padding: 40px;
+}
+
+.texto-sobre {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.texto-sobre h1 {
+    text-align: center;
+}
+
+.linha {
+    margin: 40px 0;
+}
+
+.desenvolvedor-sobre {
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px 20px;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+}
+
+.caixa-texto {
+    width: 600px;
+    margin:auto auto auto 40px;
+}
+
+.nome {
+    border-bottom: 1px solid #ccc;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.contato-sobre {
+    display: flex;
+    justify-content: center;
+}
+
+.contato-caixa {
+    width:30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contato-caixa h3 {
+    margin: 0;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
